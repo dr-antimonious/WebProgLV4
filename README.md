@@ -47,7 +47,7 @@ U ovoj vježbi zadatak je nadodati dinamičke fukncionalnosti u web stranicu kor
 
 (za 2 boda)
 
-- [ ]  File **admin.php** 
+- [x]  File **admin.php** 
 Admin login:
     - Email: [admin@admin.com](mailto:admin@admin.com)
     - Password: admin123
@@ -56,25 +56,25 @@ Admin login:
     
     [****************dodatno****************] 
     
-    - [ ]  Ako administrator ugasi stranicu i ponovno ode na dashboard url, automatski
+    - [x]  Ako administrator ugasi stranicu i ponovno ode na dashboard url, automatski
     je logiran sve dok mu traje aktivni cookie. Administrator ne smije doći na navedeni URL dashboard-a ako se nije prethodno prijavio. Također, administratorova šifra unutar baze podataka mora biti enkriptirana (odabrati MD5 ili SHA256 kriptografsku metodu).
 
-- [ ]  Ako je administrator unutar nadozrne ploče (dashboard) i klikne na **Proizvodi** unutar menija, otvorit će mu se liste svih trenutno kreiranih proizvoda (ako postoje) s prikazom slike, ime proizvoda, cijena i dostupna količina. Proizvodi se čitaju iz spremljene tablice u bazi. Kada administrator odabere opciju dodavanje proizvoda, odnosno klik na button "dodaj novi proizvod", logika ga vodi na novu stranicu gdje može ispuniti podatke o željenom novom proizvodu. Administrator potvrđuje svoje podatke o proizvodu tako što će kliknuti na gumb o potvrdi proizvoda. Kada administrator potvrdi proizvod, logika ga vraća na prethodnu stranicu gdje može vidjeti novi dodani proizvod unutar liste proizvoda. Ako korisnik ili administrator odu na početnu stranicu, prikazat će im se novo dodani proizvod na npr. "Novo u ponudi" dijelu gdje će se proizvodi dinamički povući iz baze podataka.
-- [ ]  Ako postoje proizvodi unutar sučelja "Proizvodi", korisnik ima mogućnost da klikne na gumb "Ažuriraj proizvod" **(** koji će ga odvesti na novo sučelje koje je vrlo slično onome kada se
+- [x]  Ako je administrator unutar nadozrne ploče (dashboard) i klikne na **Proizvodi** unutar menija, otvorit će mu se liste svih trenutno kreiranih proizvoda (ako postoje) s prikazom slike, ime proizvoda, cijena i dostupna količina. Proizvodi se čitaju iz spremljene tablice u bazi. Kada administrator odabere opciju dodavanje proizvoda, odnosno klik na button "dodaj novi proizvod", logika ga vodi na novu stranicu gdje može ispuniti podatke o željenom novom proizvodu. Administrator potvrđuje svoje podatke o proizvodu tako što će kliknuti na gumb o potvrdi proizvoda. Kada administrator potvrdi proizvod, logika ga vraća na prethodnu stranicu gdje može vidjeti novi dodani proizvod unutar liste proizvoda. Ako korisnik ili administrator odu na početnu stranicu, prikazat će im se novo dodani proizvod na npr. "Novo u ponudi" dijelu gdje će se proizvodi dinamički povući iz baze podataka.
+- [x]  Ako postoje proizvodi unutar sučelja "Proizvodi", korisnik ima mogućnost da klikne na gumb "Ažuriraj proizvod" **(** koji će ga odvesti na novo sučelje koje je vrlo slično onome kada se
 dodaje proizvod, međutim u svakom inputu će postoji predefinirane informacije o navedenom proizvodu koje su također povučene iz baze podataka. Korisnik (administrator) ima mogućnost izmijeniti podatke koje želi, međutim postoje 2 opcije:
-    - [ ]  Prva opcija je da potvrdi i ažurira informacije o proizvodu, gdje će ga logika vratiti na prethodni page u kojem će moći vidjeti ažurirane podatke
-    - [ ]  Druga opcija je da obriše navedeni proizvod tako što klikne na "Obriši proizvod" button, gdje će ga logika vratiti također na prethodni page ali neće moći vidjeti više informacije o obrisanom proizvodu.
+    - [x]  Prva opcija je da potvrdi i ažurira informacije o proizvodu, gdje će ga logika vratiti na prethodni page u kojem će moći vidjeti ažurirane podatke
+    - [x]  Druga opcija je da obriše navedeni proizvod tako što klikne na "Obriši proizvod" button, gdje će ga logika vratiti također na prethodni page ali neće moći vidjeti više informacije o obrisanom proizvodu.
     - (Napomena: Sve promjene koje se događaju unutar kategorije proizvode moraju se odraziti na prikazane proizvode na početnoj stranici.)
-- [ ]  **Korisnikovo dodavanja artikala** u košaricu kad se klikne gumb za kupovinu artikla, brisanje artikala iz košarice i prikaz ukupne cijene košarice.  Pripaziti opciju odabira artikala više puta (komada) u košaricu .
+- [x]  **Korisnikovo dodavanja artikala** u košaricu kad se klikne gumb za kupovinu artikla, brisanje artikala iz košarice i prikaz ukupne cijene košarice.  Pripaziti opciju odabira artikala više puta (komada) u košaricu .
     - [ ]  Kada korisnik doda proizvode u minicart i klikne na button "Kupi sad", logika ga treba odvesti na cart page gdje će mu se u većoj varijanti košarice prikazati svi detalji koji su se nalazili unutar minicarta - naziv proizvoda, cijena, količina itd. Korisnik osim povećane verzije košarice, s desne ili lijeve strane ima informacije o narudžbi koje mora popuniti, kao i skraćeni prikaz njegove ukupne narudžbe unutar košarice (potrebno je samo definirati ukupnu cijenu košarice) gdje postoji veliki dizajnirani gumb da potvrdi svoju kupovinu. Korisnik ne može kliknuti na button ako sve informacije unutar forme za narudžbu nisu validirane i ispunjene.
     
-    [****************dodatno]:**************** 
+    [****************dodatno****************]: 
     
-    - [ ]  Kada korisnik ispuni sve podatke i klikne na button za naručiti, ako postoje tražene količine proizvoda na stanju, logika će ga prebaciti na stranicu koja mu potvrđuje njegovu narudžbu (tkz. success page). Na navedenoj stranici potrebno je definirati kako je njegova narudžba zaprimljena i prikazati kreiranu narudžbu koju je korisnik naručio. Ako ne postoje tražene količine proizvoda na stanju, potrebno je korisniku prikazati poruku (još uvijek na cart page-u) kako trenutna količina koju on želi je nedostupna. Nakon što se operacija izvrši, također je potrebno smanjiti dostupnu količinu (QTY) određenog proizvoda koji je naručen
+    - [x]  Kada korisnik ispuni sve podatke i klikne na button za naručiti, ako postoje tražene količine proizvoda na stanju, logika će ga prebaciti na stranicu koja mu potvrđuje njegovu narudžbu (tkz. success page). Na navedenoj stranici potrebno je definirati kako je njegova narudžba zaprimljena i prikazati kreiranu narudžbu koju je korisnik naručio. Ako ne postoje tražene količine proizvoda na stanju, potrebno je korisniku prikazati poruku (još uvijek na cart page-u) kako trenutna količina koju on želi je nedostupna. Nakon što se operacija izvrši, također je potrebno smanjiti dostupnu količinu (QTY) određenog proizvoda koji je naručen
     (potrebno je testirati i pogledati prikaz unutar sekcije "Proizvodi").]
 
-- [ ]  ***Mogućnost "kupovine" artikala u košarici** -* Kupovina se odvija tako da se prikaže poruka da je kupovina uspješna i da se košarica isprazni. Paziti na kupovinu prazne košarice i slično. Osvježiti gumb za prikaz košarice tako da dinamički prikazuje broj artikala u košarici.
-- [ ]  Nakon što korisnik napravi narudžbu, administrator unutar njegove nadzorne ploče odlaskom na sekciju "Narudžbe" može pregledati napravljenu narudžbu tako što će imati prikaz o informacijama narudžbe (ime, prezime, telefon, adresa itd.) i naručene proizvode koje je potrebno samo tekstualno ispisati pod odgovarajućim stupcem. (pr. 1x Banana, 2x jabuke Cijena ukupno: xxxx itd.)
+- [x]  ***Mogućnost "kupovine" artikala u košarici** -* Kupovina se odvija tako da se prikaže poruka da je kupovina uspješna i da se košarica isprazni. Paziti na kupovinu prazne košarice i slično. Osvježiti gumb za prikaz košarice tako da dinamički prikazuje broj artikala u košarici.
+- [x]  Nakon što korisnik napravi narudžbu, administrator unutar njegove nadzorne ploče odlaskom na sekciju "Narudžbe" može pregledati napravljenu narudžbu tako što će imati prikaz o informacijama narudžbe (ime, prezime, telefon, adresa itd.) i naručene proizvode koje je potrebno samo tekstualno ispisati pod odgovarajućim stupcem. (pr. 1x Banana, 2x jabuke Cijena ukupno: xxxx itd.)
 
 **BODOVANJE:** 
 
